@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recupera la contraseña de tu cuenta de ACME AIR fácilmente.">
+  <meta name="theme-color" content="#d13cff">
+  <title>ACME AIR — Recuperar Contraseña</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Decoradores de fondo -->
+  <div class="bg-blob bg-blob-1" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob-2" aria-hidden="true"></div>
+
+  <!-- PANEL DE MARCA (solo desktop) -->
+  <aside class="auth-brand-panel" style="display: none;" aria-hidden="true">
+    <span class="brand-panel__plane" role="img" aria-label="Boya Salvavidas">🛟</span>
+    <div class="logo">
+      <div class="logo__icon">✈️</div>
+      <div class="logo__text">
+        <span class="logo__name">ACME AIR</span>
+        <span class="logo__tagline">Fly With Confidence</span>
+      </div>
+    </div>
+    <p class="brand-panel__tagline">
+      ¿Olvidaste tu contraseña?<br>
+      No te preocupes, <strong>estamos aquí para ayudarte</strong><br>
+      a recuperar el acceso.
+    </p>
+  </aside>
+
+  <!-- PANEL FORMULARIO -->
+  <main class="auth-page auth-form-panel" id="recuperar-page">
+
+    <!-- Logo (móvil/tablet) -->
+    <div class="auth-logo-wrap" aria-label="Logo ACME AIR">
+      <div class="logo" style="justify-content: center;">
+        <div class="logo__icon" role="img" aria-label="Ícono de avión">✈️</div>
+        <div class="logo__text">
+          <span class="logo__name">ACME AIR</span>
+          <span class="logo__tagline">Fly With Confidence</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta -->
+    <section class="auth-card" aria-labelledby="recuperar-heading">
+      
+      <!-- Volver al login -->
+      <a href="index.html" class="btn-back" style="position:absolute; top:24px; left:24px;" aria-label="Volver al inicio de sesión">←</a>
+
+      <!-- Ícono decorativo -->
+      <div style="text-align:center; margin-bottom: var(--sp-4);">
+        <span style="font-size: 3rem;" role="img" aria-label="Correo">📨</span>
+      </div>
+
+      <h1 class="auth-card__title text-center" id="recuperar-heading">Recuperar Acceso</h1>
+      <p class="auth-card__subtitle text-center">Ingresa tu correo para recibir un enlace de recuperación</p>
+
+      <form id="recuperar-form" novalidate>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email" class="form-label">
+            Correo electrónico <span class="required" aria-hidden="true">*</span>
+          </label>
+          <div class="input-wrapper">
+            <span class="input-icon" aria-hidden="true">📧</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="correo@ejemplo.com"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-label="Correo electrónico registrado"
+            >
+          </div>
+        </div>
+
+        <!-- Botón Enviar -->
+        <div style="margin-top: var(--sp-5);">
+          <a
+            href="index.html"
+            class="btn btn-primary"
+            id="enviar-recuperacion-btn"
+            role="button"
+            aria-label="Enviar enlace de recuperación"
+          >
+            ✉️&nbsp; Enviar Enlace
+          </a>
+        </div>
+
+      </form>
+      
+      <p class="form-footer">
+        <a href="index.html" class="form-link" aria-label="Volver a iniciar sesión">Volver al inicio de sesión</a>
+      </p>
+
+    </section>
+  </main>
+
+</body>
+</html>
