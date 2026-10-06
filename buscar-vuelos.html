@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACME AIR - Buscar Vuelos</title>
+ <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header">
+    <img src="img/avio.png" alt="Logo ACME AIR" class="logo">
+    <div class="text">
+      <h1 class="title">ACME AIR</h1>
+      <p class="tagline">Flying to your dreams</p>
+    </div>
+  </header>
+  <section class="perfil">
+    <div class="perfil-info">
+      <img src="img/usuario.png" alt="Usuario" class="icono">
+      <p class="usuario">John Doe</p>
+      <a href="login.html" class="logout">Cerrar Sesión</a>
+    </div>
+  </section>
+  <main class="box">
+    <h2>Busqueda de vuelos</h2>
+    <form action="vuelos.html" method="post" class="form">
+      <div class="check">
+        <input type="checkbox" id="ida" name="ida">
+        <label for="ida">Solo ida</label>
+      </div>
+      <label for="origen">Origen</label>
+      <input type="text" id="origen" name="origen" required>
+      <label for="destino">Destino</label>
+      <input type="text" id="destino" name="destino" required>
+      <label for="salida">Fecha de salida</label>
+      <input type="date" id="salida" name="salida" placeholder="dd/mm/aaaa" required>
+      <label for="regreso">Fecha de regreso</label>
+      <input type="date" id="regreso" name="regreso" placeholder="dd/mm/aaaa">
+      <button type="submit" class="btn">BUSCAR</button>
+    </form>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
