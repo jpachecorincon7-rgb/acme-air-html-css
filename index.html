@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - ACME AIR</title>
+    <!-- Aquí conectarás tu archivo CSS más adelante -->
+</head>
+<body>
+
+    <main class="login-container">
+        <!-- Contenedor de la tarjeta de login -->
+        <section class="login-card">
+            
+            <!-- Logo de la empresa -->
+            <header class="login-header">
+                <img src="logo.png" alt="Logo de ACME AIR" class="login-logo">
+                <h1>Iniciar Sesión</h1>
+            </header>
+
+            <!-- Formulario de Inicio de Sesión -->
+            <form action="#" method="POST" class="login-form">
+                
+                <!-- Campo: Email -->
+                <div class="form-group">
+                    <label for="email" class="sr-only">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <!-- Campo: Contraseña -->
+                <div class="form-group">
+                    <label for="password" class="sr-only">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+
+                <!-- Checkbox: Recordar mis datos -->
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span>Recordar mis datos</span>
+                    </label>
+                </div>
+
+                <!-- Botón Primario -->
+                <button type="submit" class="btn-primary">INGRESAR</button>
+                
+            </form>
+
+            <!-- Enlaces de navegación del pie de tarjeta -->
+            <footer class="login-footer">
+                <a href="#" class="footer-link">Crear cuenta</a>
+                <a href="#" class="footer-link">¿Has olvidado tu contraseña?</a>
+            </footer>
+
+        </section>
+    </main>
+
+</body>
+</html>
