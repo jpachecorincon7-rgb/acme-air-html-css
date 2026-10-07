@@ -3,30 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ACME AIR - Crear Contraseña</title>
+  <title>ACME AIR — Crear Contraseña</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/forms.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <header class="header">
-  <img src="img/avion.png" alt="Logo ACME AIR" class="logo">
-  <div class="text">
-    <h1>ACME AIR</h1>
-    <p class="tagline">Flying to your dreams</p>
+  <div class="page-wrapper">
+    <header class="app-header">
+      <div class="app-header__logo">
+        <img src="img/icons/avion.png" alt="Logo" class="app-header__plane">
+        <div class="app-header__brand">
+          <span class="app-header__name">ACME AIR</span>
+          <span class="app-header__tagline">Flying to your dreams</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-card">
+      <h1 class="card-title">Crear Contraseña</h1>
+      <hr class="card-divider">
+
+      <form action="menu.html" method="get">
+        <div class="form-group">
+          <input type="password" name="pass" class="form-input" placeholder="Contraseña" required>
+        </div>
+        <div class="form-group">
+          <input type="password" name="pass2" class="form-input" placeholder="Repetir Contraseña" required>
+        </div>
+        <div class="form-group">
+          <a href="menu.html" class="btn-primary" role="button">GUARDAR</a>
+        </div>
+      </form>
+    </main>
   </div>
-</header>
-  <main class="box">
-    <h2>Crear Contraseña</h2>
-    <form action="menu.html" method="post" class="form">
-      <label for="pass">Contraseña</label>
-      <input type="password" id="pass" name="pass" required>
-      <label for="pass2">Repetir Contraseña</label>
-      <input type="password" id="pass2" name="pass2" required>
-      <button type="submit" class="btn">GUARDAR</button>
-    </form>
-  </main>
 </body>
 </html>
 
