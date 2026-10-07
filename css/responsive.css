@@ -1,0 +1,23 @@
+/* ================================================
+   RESPONSIVO
+   ================================================ */
+@media (max-width: 480px) {
+  .app-card  { border-radius: 0; min-height: 100vh; }
+  .login-wrapper { padding: 20px 16px; }
+  .app-card  { padding: 24px 16px 32px; }
+  .tabla-vuelos { font-size: 0.82rem; }
+  .tabla-vuelos tbody td { padding: 10px; }
+}
+
+@media (min-width: 768px) {
+  .page-wrapper {
+    background: var(--clr-bg);
+    justify-content: flex-start;
+  }
+  .app-card {
+    margin-top: 0;
+    border-radius: 0;
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
