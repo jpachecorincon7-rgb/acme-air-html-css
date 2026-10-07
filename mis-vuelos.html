@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Consulta tus vuelos y reservas activas en ACME AIR.">
-  <meta name="theme-color" content="#d13cff">
   <title>ACME AIR — Mis Vuelos</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/forms.css">
@@ -13,45 +12,29 @@
 </head>
 <body>
 
-  <!-- Decoradores de fondo -->
-  <div class="bg-blob bg-blob-1" aria-hidden="true"></div>
-  <div class="bg-blob bg-blob-2" aria-hidden="true"></div>
-
-  <div class="inner-page" id="mis-vuelos-page">
+  <div class="page-wrapper" id="mis-vuelos-page">
 
     <!-- ======== HEADER ======== -->
-    <header class="inner-header" role="banner">
-      <a href="menu.html" class="btn-back" aria-label="Volver al menú principal">←</a>
-      <h1 class="inner-header__title">Mis Vuelos</h1>
-      <div class="inner-header__right">
-        <a href="index.html" class="btn btn-outline-white" aria-label="Cerrar sesión">🚪 Salir</a>
+    <header class="app-header" role="banner">
+      <div class="app-header__logo">
+        <img src="img/icons/avion.png" alt="" class="app-header__plane">
+        <div class="app-header__brand">
+          <span class="app-header__name">ACME AIR</span>
+          <span class="app-header__tagline">Flying to your dreams</span>
+        </div>
       </div>
     </header>
 
-    <!-- ======== HERO ======== -->
-    <div class="page-hero" aria-hidden="true">
-      <span class="page-hero__icon" role="img" aria-label="Historial">📋</span>
-      <p class="page-hero__title">Tus Reservas</p>
-      <p class="page-hero__sub">Revisa tus próximos viajes y tu historial</p>
-    </div>
-
     <!-- ======== CONTENIDO ======== -->
-    <main class="inner-content" id="mis-vuelos-content">
+    <main class="app-card" role="main">
 
-      <!-- Pestañas (simuladas visualmente) -->
-      <div class="inner-card" style="padding: 0; overflow: hidden; margin-bottom: var(--sp-6);" aria-label="Filtro de vuelos">
-        <div style="display: flex; text-align: center; font-weight: 600;">
-          <div style="flex: 1; padding: var(--sp-3); background: var(--grad-primary); color: white; cursor: default;">
-            Próximos
-          </div>
-          <div style="flex: 1; padding: var(--sp-3); background: white; color: var(--text-muted); border-bottom: 2px solid transparent; cursor: pointer;">
-            Historial
-          </div>
-        </div>
-      </div>
+      <a href="menu.html" class="btn-back" aria-label="Volver al menú">← Volver</a>
 
-      <!-- ---- TARJETAS DE VUELO ---- -->
-      <div class="flights-list" role="list" aria-label="Lista de tus vuelos próximos">
+      <h1 class="card-title">Mis Vuelos</h1>
+      <hr class="card-divider">
+
+      <!-- Lista de reservas -->
+      <div class="flights-list" role="list" aria-label="Tus vuelos">
 
         <!-- Reserva 1 -->
         <article class="flight-card" role="listitem" aria-label="Reserva confirmada a Miami">
@@ -59,14 +42,14 @@
             <div class="flight-route">
               <span class="flight-route__city">BOG</span>
               <div style="text-align:center;">
-                <span class="flight-route__icon">✈️</span>
+                <img src="img/icons/avion.png" class="flight-route__icon-img" alt="">
                 <span class="flight-route__arrow">directo</span>
               </div>
               <span class="flight-route__city">MIA</span>
             </div>
-            <div style="text-align: right;">
+            <div style="text-align:right;">
               <span class="badge badge-success">Confirmado</span><br>
-              <span style="font-size: var(--tx-xs); color: var(--text-muted); font-weight: 600;">PNR: XY987Z</span>
+              <span style="font-size:0.72rem;color:var(--clr-muted);font-weight:600;">PNR: XY987Z</span>
             </div>
           </div>
           <div class="flight-card__details">
@@ -84,9 +67,7 @@
             </div>
           </div>
           <div class="flight-card__footer">
-            <div>
-              <span class="flight-airline">✈ ACME AIR · AC852</span>
-            </div>
+            <span class="flight-airline">ACME AIR · AC852</span>
             <a href="menu.html" class="btn-select-flight" aria-label="Gestionar reserva XY987Z">
               Gestionar ›
             </a>
@@ -94,19 +75,19 @@
         </article>
 
         <!-- Reserva 2 -->
-        <article class="flight-card" role="listitem" aria-label="Reserva pendiente de Check-in a Cancún">
+        <article class="flight-card" role="listitem" aria-label="Reserva a Cancún con check-in abierto">
           <div class="flight-card__header">
             <div class="flight-route">
               <span class="flight-route__city">MDE</span>
               <div style="text-align:center;">
-                <span class="flight-route__icon">✈️</span>
+                <img src="img/icons/avion.png" class="flight-route__icon-img" alt="">
                 <span class="flight-route__arrow">directo</span>
               </div>
               <span class="flight-route__city">CUN</span>
             </div>
-            <div style="text-align: right;">
+            <div style="text-align:right;">
               <span class="badge badge-warning">Check-in Abierto</span><br>
-              <span style="font-size: var(--tx-xs); color: var(--text-muted); font-weight: 600;">PNR: AB123C</span>
+              <span style="font-size:0.72rem;color:var(--clr-muted);font-weight:600;">PNR: AB123C</span>
             </div>
           </div>
           <div class="flight-card__details">
@@ -124,22 +105,13 @@
             </div>
           </div>
           <div class="flight-card__footer">
-            <div>
-              <span class="flight-airline">✈ ACME AIR · AC445</span>
-            </div>
-            <a href="checkin.html" class="btn-select-flight" style="background: var(--clr-primary); color: white;" aria-label="Hacer check-in para la reserva AB123C">
-              Hacer Check-In ›
+            <span class="flight-airline">ACME AIR · AC445</span>
+            <a href="checkin.html" class="btn-select-flight" style="background:var(--clr-primary);color:white;border-color:var(--clr-primary);" aria-label="Hacer check-in reserva AB123C">
+              Check-In ›
             </a>
           </div>
         </article>
 
-      </div><!-- /flights-list -->
-
-      <!-- Botón Volver -->
-      <div style="margin-top: var(--sp-6); width: 100%; max-width: 600px;">
-        <a href="menu.html" class="btn btn-secondary" role="button" aria-label="Volver al menú principal">
-          ← Volver al menú principal
-        </a>
       </div>
 
     </main>
@@ -148,3 +120,4 @@
 
 </body>
 </html>
+
