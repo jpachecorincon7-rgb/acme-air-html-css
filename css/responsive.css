@@ -1,10 +1,28 @@
-/* ================================================
-   RESPONSIVO
-   ================================================ */
+@media (max-width: 320px) {
+  html { font-size: 14px; }
+
+  .login-wrapper { padding: 16px 12px; }
+  .login-card { padding: 24px 16px; }
+  .login-title { font-size: 1.4rem; }
+
+  .app-header { padding: 14px 16px; }
+  .app-header__name { font-size: 1rem; }
+
+  .app-card { padding: 20px 12px 28px; border-radius: 0; min-height: 100vh; }
+  .card-title { font-size: 1.3rem; }
+
+  .form-input, .form-select, .btn-primary { height: 48px; font-size: 0.88rem; }
+
+  .menu-item { padding: 14px 12px; gap: 12px; }
+  .menu-item__icon { width: 40px; height: 40px; }
+
+  .tabla-vuelos { font-size: 0.78rem; }
+  .tabla-vuelos tbody td { padding: 8px; }
+}
+
 @media (max-width: 480px) {
-  .app-card  { border-radius: 0; min-height: 100vh; }
+  .app-card { border-radius: 0; min-height: 100vh; padding: 24px 16px 32px; }
   .login-wrapper { padding: 20px 16px; }
-  .app-card  { padding: 24px 16px 32px; }
   .tabla-vuelos { font-size: 0.82rem; }
   .tabla-vuelos tbody td { padding: 10px; }
 }
@@ -14,10 +32,82 @@
     background: var(--clr-bg);
     justify-content: flex-start;
   }
+
   .app-card {
     margin-top: 0;
     border-radius: 0;
     max-width: 100%;
     box-shadow: none;
   }
+
+  .login-card {
+    max-width: 520px;
+  }
+
+  .menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 16px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu-item__arrow { display: none; }
+}
+
+@media (min-width: 1024px) {
+  .page-wrapper {
+    justify-content: flex-start;
+    padding: 0 80px;
+    background: var(--clr-bg);
+  }
+
+  .app-header {
+    padding: 20px 80px;
+  }
+
+  .app-card {
+    max-width: 860px;
+    margin: 32px auto 0;
+    border-radius: var(--radius-lg);
+    padding: 40px 60px 60px;
+    box-shadow: var(--shadow-card);
+    min-height: auto;
+  }
+
+  .login-wrapper {
+    padding: 40px 80px;
+  }
+
+  .login-card {
+    max-width: 500px;
+    padding: 48px 40px;
+  }
+
+  .menu-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 16px;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .menu-item__icon { width: 64px; height: 64px; }
+  .menu-item__arrow { display: none; }
+
+  .card-title { font-size: 1.75rem; }
+
+  .tabla-vuelos { font-size: 0.95rem; }
 }
