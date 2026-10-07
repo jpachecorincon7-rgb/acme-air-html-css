@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Realiza tu Check-In en línea con ACME AIR.">
+  <title>ACME AIR — Check-In</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div class="page-wrapper" id="checkin-page">
+
+    <!-- ======== HEADER ======== -->
+    <header class="app-header" role="banner">
+      <div class="app-header__logo">
+        <img src="img/icons/avion.png" alt="" class="app-header__plane">
+        <div class="app-header__brand">
+          <span class="app-header__name">ACME AIR</span>
+          <span class="app-header__tagline">Flying to your dreams</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======== CONTENIDO ======== -->
+    <main class="app-card" role="main">
+
+      <a href="menu.html" class="btn-back" aria-label="Volver al menú">← Volver</a>
+
+      <h1 class="card-title">Check-In</h1>
+      <hr class="card-divider">
+
+      <form id="checkin-form" novalidate>
+
+        <!-- Código de Reserva (PNR) -->
+        <div class="form-group">
+          <input
+            type="text"
+            id="pnr"
+            name="pnr"
+            class="form-input"
+            placeholder="Código de Reserva (PNR)"
+            autocomplete="off"
+            required
+            aria-required="true"
+            aria-label="Código de reserva PNR"
+            maxlength="6"
+            style="text-transform: uppercase;"
+          >
+        </div>
+
+        <!-- Apellido -->
+        <div class="form-group">
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            class="form-input"
+            placeholder="Apellido"
+            autocomplete="family-name"
+            required
+            aria-required="true"
+            aria-label="Apellido del pasajero"
+          >
+        </div>
+
+        <!-- Carga peligrosa -->
+        <div class="form-group">
+          <label class="form-check" for="carga-peligrosa">
+            <input type="checkbox" id="carga-peligrosa" name="carga-peligrosa" required>
+            Confirmo que no llevo artículos prohibidos en mi equipaje.
+          </label>
+        </div>
+
+        <!-- Botón -->
+        <div class="form-group">
+          <a
+            href="menu.html"
+            class="btn-primary"
+            id="btn-checkin"
+            role="button"
+            aria-label="Obtener pase de abordar"
+          >
+            OBTENER PASE DE ABORDAR
+          </a>
+        </div>
+
+      </form>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
