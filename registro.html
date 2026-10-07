@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ACME AIR</title>
+    <!-- Aquí conectarás tu archivo CSS más adelante -->
+</head>
+<body>
+
+    <main class="register-container">
+        <!-- Tarjeta principal del formulario -->
+        <section class="register-card">
+            
+            <!-- Banner superior con gradiente y logo -->
+            <header class="register-header">
+                <div class="logo-wrapper">
+                    <img src="logo-white.png" alt="Logo ACME AIR" class="company-logo">
+                    <div class="brand-text">
+                        <span class="brand-name">ACME AIR</span>
+                        <span class="brand-slogan">Flying to your dreams</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Contenido del formulario de registro -->
+            <div class="register-content">
+                <h1>Registro</h1>
+                <hr class="divider">
+
+                <form action="#" method="POST" class="register-form">
+                    
+                    <!-- Campo: Nombre Completo -->
+                    <div class="form-group">
+                        <label for="fullname" class="sr-only">Nombre Completo</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Nombre Completo" required>
+                    </div>
+
+                    <!-- Campo: No. Identificación -->
+                    <div class="form-group">
+                        <label for="id-number" class="sr-only">No. Identificación</label>
+                        <input type="text" id="id-number" name="id_number" placeholder="No. Identificación" required>
+                    </div>
+
+                    <!-- Campo: E-mail -->
+                    <div class="form-group">
+                        <label for="email" class="sr-only">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    </div>
+
+                    <!-- Campo: Teléfono -->
+                    <div class="form-group">
+                        <label for="phone" class="sr-only">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+                    </div>
+
+                    <!-- Campo: Ciudad (Menú desplegable) -->
+                    <div class="form-group">
+                        <label for="city" class="sr-only">Ciudad</label>
+                        <select id="city" name="city" required>
+                            <option value="" disabled selected hidden>Ciudad</option>
+                            <!-- Las opciones de ciudades se pueden añadir aquí -->
+                            <option value="bogota">Bogota</option>
+                            <option value="medellin">Medellin</option>
+                            <option value="cali">Cali</option>
+                        </select>
+                    </div>
+
+                    <!-- Botón Primario: Guardar -->
+                    <button type="submit" class="btn-primary">GUARDAR</button>
+                    
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
