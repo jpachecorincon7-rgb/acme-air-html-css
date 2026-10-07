@@ -1,47 +1,71 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ACME AIR - Buscar Vuelos</title>
- <link rel="stylesheet" href="css/style.css">
+  <title>ACME AIR — Buscar Vuelos</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/forms.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <header>
-    <img src="img/avion.png" alt="Logo ACME AIR" class="logo">
-    <div>
-      <h1>ACME AIR</h1>
-      <p>Flying to your dreams</p>
-    </div>
-  </header>
-  <section>
-    <div>
-      <img src="img/usuario.png" alt="Usuario" >
-      <p>John Doe</p>
-      <a href="login.html">Cerrar Sesión</a>
-    </div>
-  </section>
-  <main>
-    <h2>Busqueda de vuelos</h2>
-    <form action="vuelos.html" method="post">
-      <div>
-        <input type="checkbox" id="ida" name="ida">
-        <label for="ida">Solo ida</label>
+  <div class="page-wrapper">
+    <header class="app-header">
+      <div class="app-header__logo">
+        <img src="img/icons/avion.png" alt="Logo" class="app-header__plane">
+        <div class="app-header__brand">
+          <span class="app-header__name">ACME AIR</span>
+          <span class="app-header__tagline">Flying to your dreams</span>
+        </div>
       </div>
-      <label for="origen">Origen</label>
-      <input type="text" id="origen" name="origen" required>
-      <label for="destino">Destino</label>
-      <input type="text" id="destino" name="destino" required>
-      <label for="salida">Fecha de salida</label>
-      <input type="date" id="salida" name="salida" placeholder="dd/mm/aaaa" required>
-      <label for="regreso">Fecha de regreso</label>
-      <input type="date" id="regreso" name="regreso" placeholder="dd/mm/aaaa">
-      <button type="submit">BUSCAR</button>
-    </form>
-  </main>
+    </header>
+
+    <main class="app-card">
+      <a href="menu.html" class="btn-back">← Volver</a>
+      <h1 class="card-title">Búsqueda de vuelos</h1>
+      <hr class="card-divider">
+
+      <form action="vuelos.html" method="get">
+        <div class="form-group">
+          <label class="form-check" for="ida">
+            <input type="checkbox" id="ida" name="ida">
+            Solo ida
+          </label>
+        </div>
+        
+        <div class="form-group select-wrapper">
+          <select id="origen" name="origen" class="form-select" required>
+            <option value="" disabled selected>Origen</option>
+            <option value="BOG">Bogotá</option>
+            <option value="MDE">Medellín</option>
+            <option value="CUN">Cancún</option>
+          </select>
+        </div>
+        
+        <div class="form-group select-wrapper">
+          <select id="destino" name="destino" class="form-select" required>
+            <option value="" disabled selected>Destino</option>
+            <option value="BOG">Bogotá</option>
+            <option value="MDE">Medellín</option>
+            <option value="CUN">Cancún</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <input type="date" id="salida" name="salida" class="form-input" placeholder="Fecha de salida" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="date" id="regreso" name="regreso" class="form-input" placeholder="Fecha de regreso">
+        </div>
+        
+        <div class="form-group">
+          <a href="vuelos.html" class="btn-primary" role="button">BUSCAR</a>
+        </div>
+      </form>
+    </main>
+  </div>
 </body>
 </html>
 
