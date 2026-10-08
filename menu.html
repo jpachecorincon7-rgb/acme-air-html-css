@@ -1,77 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Principal - ACME AIR</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/forms.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACME AIR — Menú Principal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <div class="page-wrapper">
+    <header class="app-header">
+      <div class="app-header__logo">
+        <img src="img/icons/avion.png" alt="Logo" class="app-header__plane">
+        <div class="app-header__brand">
+          <span class="app-header__name">ACME AIR</span>
+          <span class="app-header__tagline">Flying to your dreams</span>
+        </div>
+      </div>
+    </header>
 
-    <main class="menu-container">
-        <!-- Tarjeta principal de la interfaz móvil -->
-        <section class="menu-card">
-            
-            <!-- Banner superior con gradiente, logo y nombre de la aerolínea -->
-            <header class="menu-header">
-                <div class="logo-wrapper">
-                    <img src="logo-white.png" alt="Logo ACME AIR" class="company-logo">
-                    <div class="brand-text">
-                        <span class="brand-name">ACME AIR</span>
-                        <span class="brand-slogan">Flying to your dreams</span>
-                    </div>
-                </div>
-            </header>
+    <main class="app-card">
+      <h1 class="menu-greeting">Hola, John Doe</h1>
+      <p class="menu-subtitle">¿Qué quieres hacer?</p>
+      <a href="index.html" class="menu-logout">Cerrar sesión</a>
 
-            <!-- Contenido de bienvenida y acciones -->
-            <div class="menu-content">
-                
-                <!-- Encabezado de usuario -->
-                <div class="user-greeting">
-                    <h1>¡Hola John Doe!</h1>
-                    <h2>¿Que quieres hacer?</h2>
-                    <a href="#" class="btn-logout">Cerrar Sesión</a>
-                </div>
+      <nav class="menu-list">
+        <a href="buscar-vuelos.html" class="menu-item">
+          <img src="img/icons/buscar-vuelo.png" alt="" class="menu-item__icon">
+          <span class="menu-item__label">Buscar vuelos ✈️</span>
+          <span class="menu-item__arrow">›</span>
+        </a>
 
-                <!-- Lista de tarjetas visuales/opciones -->
-                <nav class="menu-navigation">
-                    
-                    <!-- Opción 1: Buscar vuelos -->
-                    <a href="#" class="menu-item-card">
-                        <div class="card-left">
-                            <img src="icon-vuelos.png" alt="" class="card-icon" aria-hidden="true">
-                            <span class="card-title">Buscar vuelos</span>
-                        </div>
-                        <span class="card-arrow" aria-hidden="true">&gt;</span>
-                    </a>
+        <a href="checkin.html" class="menu-item">
+          <img src="img/icons/cheque.png" alt="" class="menu-item__icon">
+          <span class="menu-item__label">Check-in 🧳</span>
+          <span class="menu-item__arrow">›</span>
+        </a>
 
-                    <!-- Opción 2: Check In -->
-                    <a href="#" class="menu-item-card">
-                        <div class="card-left">
-                            <img src="icon-checkin.png" alt="" class="card-icon" aria-hidden="true">
-                            <span class="card-title">Check In</span>
-                        </div>
-                        <span class="card-arrow" aria-hidden="true">&gt;</span>
-                    </a>
-
-                    <!-- Opción 3: Mis Vuelos -->
-                    <a href="#" class="menu-item-card">
-                        <div class="card-left">
-                            <img src="icon-misvuelos.png" alt="" class="card-icon" aria-hidden="true">
-                            <span class="card-title">Mis Vuelos</span>
-                        </div>
-                        <span class="card-arrow" aria-hidden="true">&gt;</span>
-                    </a>
-
-                </nav>
-
-            </div>
-
-        </section>
+        <a href="mis-vuelos.html" class="menu-item">
+          <img src="img/icons/planificador.png" alt="" class="menu-item__icon">
+          <span class="menu-item__label">Mis vuelos 📋</span>
+          <span class="menu-item__arrow">›</span>
+        </a>
+      </nav>
     </main>
-
+  </div>
 </body>
 </html>
