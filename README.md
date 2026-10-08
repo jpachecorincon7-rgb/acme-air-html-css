@@ -89,7 +89,7 @@ De forma que le podamos garantizar una experiencia que sea consistente sin impor
 <img width="389" height="855" alt="image" src="https://github.com/user-attachments/assets/db799496-8a03-45b5-a2bf-1ebba7de3bd0" />
 
 - **Buscar Vuelos**
-<img width="389" height="828" alt="image" src="https://github.com/user-attachments/assets/37e33ad4-aee8-4dc2-bca6-7a77b57ad16a" />
+<img width="390" height="857" alt="image" src="https://github.com/user-attachments/assets/75d656b1-222f-4477-bb27-74086c90bd93" />
 
 - **Vuelos Disponibles**
 <img width="392" height="783" alt="image" src="https://github.com/user-attachments/assets/4f755070-953c-4fe3-bc91-eb55b5d04a0f" />
