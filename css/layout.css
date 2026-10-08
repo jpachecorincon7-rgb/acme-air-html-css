@@ -372,3 +372,111 @@
   border-color: var(--clr-primary);
 }
 
+/* --- ESTILOS NUEVOS PARA VUELOS DISPONIBLES --- */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--clr-divider);
+  padding: 5px;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+.user-name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #222;
+  line-height: 1.2;
+}
+.user-logout {
+  font-size: 1rem;
+  color: #666;
+  text-decoration: underline;
+}
+.flight-search-info {
+  color: #555;
+  margin-bottom: 20px;
+}
+.flight-search-info > div {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.4;
+}
+.card-title-center {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.flight-card-custom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border: 1.5px solid var(--clr-divider);
+  border-radius: var(--radius-md);
+  background: var(--clr-white);
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.flight-icon-custom img {
+  width: 45px;
+  filter: invert(48%) sepia(87%) saturate(1450%) hue-rotate(195deg) brightness(91%) contrast(93%);
+}
+.flight-times-custom {
+  text-align: center;
+  flex: 1;
+}
+.flight-times-custom .time {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+.flight-times-custom .duration {
+  color: #999;
+  font-size: 0.9rem;
+}
+.flight-price-custom {
+  text-align: right;
+}
+.flight-price-custom .flight-num {
+  color: #999;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.flight-price-custom .price-val {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #777;
+}
+.flight-price-custom .price-val span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.btn-volver-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  margin-top: 25px;
+  background: var(--clr-primary);
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+.btn-volver-block:hover {
+  background: var(--clr-primary-dark);
+}
