@@ -89,10 +89,10 @@ De forma que le podamos garantizar una experiencia que sea consistente sin impor
 <img width="389" height="855" alt="image" src="https://github.com/user-attachments/assets/db799496-8a03-45b5-a2bf-1ebba7de3bd0" />
 
 - **Buscar Vuelos**
-<img width="390" height="857" alt="image" src="https://github.com/user-attachments/assets/75d656b1-222f-4477-bb27-74086c90bd93" />
+<img width="389" height="828" alt="image" src="https://github.com/user-attachments/assets/2bcc485d-d4ae-4501-9a87-9b56ab1e86dd" />
 
 - **Vuelos Disponibles**
-<img width="392" height="783" alt="image" src="https://github.com/user-attachments/assets/4f755070-953c-4fe3-bc91-eb55b5d04a0f" />
+<img width="390" height="857" alt="image" src="https://github.com/user-attachments/assets/a63dcb19-de20-4a1a-a58f-c9212c0c81be" />
 
 - **Check-In**
 <img width="391" height="855" alt="image" src="https://github.com/user-attachments/assets/4d076b06-66fb-4e95-869d-62a9a82d0e12" />
