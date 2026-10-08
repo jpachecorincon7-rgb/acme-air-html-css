@@ -10,38 +10,51 @@
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-  <div class="login-wrapper">
-    <div class="login-logo-wrap">
-      <img src="img/logo.png" alt="ACME AIR Logo" class="login-logo">
+  <div class="page-wrapper">
+    <header class="app-header">
+      <div class="app-header__logo">
+        <img src="img/icons/avion.png" alt="Logo" class="app-header__plane">
+        <div class="app-header__brand">
+          <span class="app-header__name">ACME AIR</span>
+          <span class="app-header__tagline">Flying to your dreams</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="login-center">
+      <div class="login-logo-wrap">
+        <img src="img/logo.png" alt="ACME AIR Logo" class="login-logo">
+      </div>
+
+      <main class="login-card">
+        <h1 class="login-title">Iniciar Sesión</h1>
+
+        <form action="menu.html" method="get" novalidate>
+          <div class="form-group">
+            <input type="email" id="email" name="email" class="form-input" placeholder="Correo electrónico" required>
+          </div>
+
+          <div class="form-group">
+            <input type="password" id="password" name="password" class="form-input" placeholder="Contraseña" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-check" for="recordar">
+              <input type="checkbox" id="recordar" name="recordar">
+              Recordar mis datos
+            </label>
+          </div>
+
+          <div class="form-group">
+            <a href="menu.html" class="btn-primary" role="button">INGRESAR</a>
+          </div>
+        </form>
+
+        <a href="registro.html" class="link-blue">Crear cuenta</a>
+        <a href="recuperar.html" class="link-blue">¿Has olvidado tu contraseña?</a>
+      </main>
     </div>
-    
-    <main class="login-card">
-      <h1 class="login-title">Iniciar Sesión</h1>
-      
-      <form action="menu.html" method="get" novalidate>
-        <div class="form-group">
-          <input type="email" id="email" name="email" class="form-input" placeholder="Correo electrónico" required>
-        </div>
-        
-        <div class="form-group">
-          <input type="password" id="password" name="password" class="form-input" placeholder="Contraseña" required>
-        </div>
-        
-        <div class="form-group">
-          <label class="form-check" for="recordar">
-            <input type="checkbox" id="recordar" name="recordar">
-            Recordar mis datos
-          </label>
-        </div>
-        
-        <div class="form-group">
-          <a href="menu.html" class="btn-primary" role="button">INGRESAR</a>
-        </div>
-      </form>
-      
-      <a href="registro.html" class="link-blue">Crear cuenta</a>
-      <a href="recuperar.html" class="link-blue">¿Has olvidado tu contraseña?</a>
-    </main>
   </div>
 </body>
 </html>
+
