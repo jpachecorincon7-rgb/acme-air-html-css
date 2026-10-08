@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ACME AIR — Vuelos Disponibles</title>
+  <title>ACME AIR - Vuelos Disponibles</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/forms.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -20,68 +20,72 @@
         </div>
       </div>
     </header>
-
-    <main class="app-card" style="max-width: 700px;">
-      <a href="menu.html" class="btn-back">← Volver al menú principal</a>
-      <h1 class="card-title">Vuelos Disponibles</h1>
-      <hr class="card-divider">
-
-      <div class="tabla-vuelos-container">
-        <table class="tabla-vuelos">
-          <thead>
-            <tr>
-              <th>Ruta</th>
-              <th>Fecha</th>
-              <th>Hora</th>
-              <th>Precio</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="route">
-                  <img src="img/icons/despegue-del-avion.png" alt="Avión" class="avion">
-                  <span>BOG - BAQ</span>
-                </div>
-              </td>
-              <td>29/09/2026</td>
-              <td>05:30 - 06:30</td>
-              <td class="price">COP 150.600</td>
-              <td><a href="menu.html" class="btn-vuelo-seleccionar">Seleccionar</a></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="route">
-                  <img src="img/icons/despegue-del-avion.png" alt="Avión" class="avion">
-                  <span>BOG - BAQ</span>
-                </div>
-              </td>
-              <td>29/09/2026</td>
-              <td>10:30 - 12:05</td>
-              <td class="price">COP 260.050</td>
-              <td><a href="menu.html" class="btn-vuelo-seleccionar">Seleccionar</a></td>
-            </tr>
-            <tr>
-              <td>
-                <div class="route">
-                  <img src="img/icons/despegue-del-avion.png" alt="Avión" class="avion">
-                  <span>BOG - BAQ</span>
-                </div>
-              </td>
-              <td>29/09/2026</td>
-              <td>14:15 - 15:45</td>
-              <td class="price">COP 150.600</td>
-              <td><a href="menu.html" class="btn-vuelo-seleccionar">Seleccionar</a></td>
-            </tr>
-          </tbody>
-        </table>
+    <main class="app-card" style="max-width: 500px; width: 100%;">
+      
+      <!-- Sección Perfil Usuario -->
+      <div class="user-profile">
+        <img src="img/icons/usuario.png" alt="User" class="user-avatar">
+        <div class="user-info">
+          <span class="user-name">John Doe</span>
+          <a href="index.html" class="user-logout">Cerrar Sesión</a>
+        </div>
       </div>
-
+      
+      <hr class="card-divider" style="margin-bottom: 20px;">
+      <h1 class="card-title-center">Vuelos disponibles</h1>
+      
+      <!-- Origen y Fecha -->
+      <div class="flight-search-info">
+        <div>Bogotá - Barranquilla</div>
+        <div>Septiembre - 29</div>
+      </div>
+      <!-- Tarjetas de Vuelos -->
+      <div class="flights-list">
+        
+        <article class="flight-card-custom">
+          <div class="flight-icon-custom">
+             <img src="img/icons/despegue-del-avion.png" alt="Icono vuelo">
+          </div>
+          <div class="flight-times-custom">
+            <div class="time">05:30 - 06:30</div>
+            <div class="duration">1h 30 min</div>
+          </div>
+          <div class="flight-price-custom">
+            <div class="flight-num">VAA025</div>
+            <div class="price-val"><span>COP </span>150.600</div>
+          </div>
+        </article>
+        
+        <article class="flight-card-custom">
+          <div class="flight-icon-custom">
+             <img src="img/icons/despegue-del-avion.png" alt="Icono vuelo">
+          </div>
+          <div class="flight-times-custom">
+            <div class="time">10:30 - 12:05</div>
+            <div class="duration">1h 30 min</div>
+          </div>
+          <div class="flight-price-custom">
+            <div class="flight-num">VAA412</div>
+            <div class="price-val"><span>COP </span>260.050</div>
+          </div>
+        </article>
+        <article class="flight-card-custom">
+          <div class="flight-icon-custom">
+             <img src="img/icons/despegue-del-avion.png" alt="Icono vuelo">
+          </div>
+          <div class="flight-times-custom">
+            <div class="time">14:15 - 15:45</div>
+            <div class="duration">1h 30 min</div>
+          </div>
+          <div class="flight-price-custom">
+            <div class="flight-num">VAA836</div>
+            <div class="price-val"><span>COP </span>150.600</div>
+          </div>
+        </article>
+      </div>
+      
+      <a href="menu.html" class="btn-volver-block">VOLVER</a>
     </main>
   </div>
 </body>
 </html>
-
-
-  
